@@ -1,0 +1,46 @@
+.o_reconciliation_line {
+    table.accounting_view {
+      thead tr.header {
+        td {
+          border-top: none !important;
+          background-color: white !important;
+          padding-right: 5px;
+  
+          &.sort {
+            cursor: pointer;
+          }
+        }
+      }
+      td.cell_date {
+        box-shadow: 0 1px 0 #eaeaea;
+      }
+    }
+  
+    td.cell_date {
+      width: 100px;
+    }
+  
+    td.cell_info_popover {
+      &:empty {
+        padding: 1px 2px !important;
+        width: 15px !important;
+      }
+    }
+
+    div.reconciliation_model_name {
+      color: #00a09d;
+      background: white;
+      border-radius: 20px;
+      border: 1px solid #00a09d;
+      padding: 0 0.5rem;
+      margin-top: 0.25rem;
+    }
+  
+  }
+// Break line memo value when it is too long.
+.reconcile_td_3 {
+  span.o_account_report_column_value {
+    white-space: normal !important;
+    word-break: break-all;
+  }
+}

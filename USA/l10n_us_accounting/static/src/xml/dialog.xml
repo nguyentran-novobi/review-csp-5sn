@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-inherit="web.ActionDialog" t-inherit-mode="extension">
+        <xpath expr="//button[hasclass('close')]" position="replace">
+            <t t-if="props.actionProps and props.actionProps.resModel != 'account.record.ending.balance'">
+                <button type="button" class="close" aria-label="Close" tabindex="-1" t-on-click="close">×</button>
+            </t>
+            <t t-else="">
+                <span/>
+            </t>
+        </xpath>
+    </t>
+</templates>
